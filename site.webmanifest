@@ -1,0 +1,25 @@
+{
+  "name": "AJE Technology",
+  "short_name": "AJE",
+  "lang": "es-PA",
+  "description": "AJE: Automatiza, Junta y Escala. Transformación digital para empresas en Panamá.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0B1F3A",
+  "theme_color": "#0B1F3A",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
