@@ -24,7 +24,7 @@
       link.addEventListener("click", function () { setMenu(false); });
     });
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
+      if (event.key === "Escape" && menu.classList.contains("is-open")) {
         setMenu(false);
         toggle.focus();
       }
@@ -37,51 +37,66 @@
   }
 
   function onScroll() {
-    if (header) header.classList.toggle("is-scrolled", window.scrollY > 8);
+    if (header) header.classList.toggle("is-scrolled", window.scrollY > 6);
   }
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var sceneQuery = window.matchMedia("(min-width: 1000px)");
+
+  if (!reduce) document.documentElement.classList.add("motion");
+
+  function syncScene() {
+    var saveData = navigator.connection && navigator.connection.saveData;
+    var cores = navigator.hardwareConcurrency || 8;
+    var memory = navigator.deviceMemory || 8;
+    var lowEnd = cores <= 4 && memory <= 4;
+    var on = !reduce && sceneQuery.matches && !saveData && !lowEnd && document.querySelector(".stage");
+    document.documentElement.classList.toggle("scene-on", Boolean(on));
+  }
+
+  syncScene();
+  if (sceneQuery.addEventListener) sceneQuery.addEventListener("change", syncScene);
+
   var reveals = document.querySelectorAll(".reveal");
-  if (reveals.length && "IntersectionObserver" in window) {
-    var revealObserver = new IntersectionObserver(function (entries) {
+  if (!reduce && reveals.length && "IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-in");
-          revealObserver.unobserve(entry.target);
-        }
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in");
+        io.unobserve(entry.target);
       });
-    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-    reveals.forEach(function (el) { revealObserver.observe(el); });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    reveals.forEach(function (el) { io.observe(el); });
   } else {
     reveals.forEach(function (el) { el.classList.add("is-in"); });
   }
 
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('#menu a[href^="#"]'));
-  var sections = navLinks
-    .map(function (link) { return document.querySelector(link.getAttribute("href")); })
-    .filter(Boolean);
+  var sections = navLinks.map(function (link) {
+    return document.querySelector(link.getAttribute("href"));
+  }).filter(Boolean);
   if (sections.length && "IntersectionObserver" in window) {
-    var currentObserver = new IntersectionObserver(function (entries) {
+    var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
         navLinks.forEach(function (link) {
-          var on = link.getAttribute("href") === "#" + entry.target.id;
-          if (on) link.setAttribute("aria-current", "true");
+          if (link.getAttribute("href") === "#" + entry.target.id) link.setAttribute("aria-current", "true");
           else link.removeAttribute("aria-current");
         });
       });
-    }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
-    sections.forEach(function (section) { currentObserver.observe(section); });
+    }, { rootMargin: "-40% 0px -50% 0px", threshold: 0 });
+    sections.forEach(function (section) { spy.observe(section); });
   }
 
   var floatBtn = document.querySelector(".wa-float");
   var contact = document.getElementById("contacto");
   if (floatBtn && contact && "IntersectionObserver" in window) {
-    var floatObserver = new IntersectionObserver(function (entries) {
+    var fio = new IntersectionObserver(function (entries) {
       floatBtn.classList.toggle("is-hidden", entries[0].isIntersecting);
-    }, { threshold: 0, rootMargin: "-72px 0px -20px 0px" });
-    floatObserver.observe(contact);
+    }, { threshold: 0.15 });
+    fio.observe(contact);
   }
 
   var form = document.getElementById("contact-form");
@@ -94,7 +109,7 @@
       button.textContent = "Enviando…";
       window.setTimeout(function () {
         button.disabled = false;
-        button.textContent = "Enviar mensaje";
+        button.textContent = "Pedir mapeo";
       }, 8000);
     });
   }

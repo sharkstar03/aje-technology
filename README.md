@@ -2,7 +2,7 @@
 
 Sitio web oficial de **AJE Technology, S.A.**, empresa panameña de transformación digital.
 
-**AJE: Automatiza, Junta y Escala.** El nombre también son las iniciales de los fundadores: Alexander, Jean y Edgar.
+**AJE: Automatiza, Junta y Escala.**
 
 Dirección pública: https://sharkstar03.github.io/aje-technology/
 
