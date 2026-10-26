@@ -106,6 +106,13 @@
     dio.observe(contact);
   }
 
+  if (header && contact && "IntersectionObserver" in window) {
+    var cio = new IntersectionObserver(function (entries) {
+      header.classList.toggle("cta-quiet", entries[0].isIntersecting);
+    }, { threshold: 0.2 });
+    cio.observe(contact);
+  }
+
   var form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", function () {
