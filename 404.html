@@ -16,35 +16,43 @@
 <title>Página no encontrada | AJE Technology</title>
 <meta name="description" content="Esta página no existe. Vuelve al inicio de AJE Technology.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#08080a">
+<meta name="theme-color" content="#0B1F3A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<style>
+  .miss { padding: 72px 0 96px; }
+  .miss-card { max-width: 680px; }
+  .miss-code {
+    font-family: Poppins, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: clamp(4.5rem, 14vw, 7rem);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+    color: #0b1f3a;
+    margin: 8px 0 12px;
+  }
+</style>
 </head>
-<body class="page-sub">
+<body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
-<header class="site-header">
-  <nav class="wrap nav nav-simple" aria-label="Principal">
+<header>
+  <nav class="wrap nav" aria-label="Principal">
     <a class="brand" href="index.html">
-      <img src="logo-dark.svg" alt="AJE Technology" width="210" height="97">
+      <img src="logo.svg" alt="AJE Technology" width="210" height="97">
     </a>
-    <a class="btn btn-ghost" href="index.html">Inicio</a>
+    <a class="btn btn-line" href="index.html">Inicio</a>
   </nav>
 </header>
 <main id="contenido" class="miss">
   <div class="wrap">
-    <article class="card sub-card">
+    <article class="sub-card miss-card">
       <p class="eyebrow">Error 404</p>
-      <p class="miss-code">404</p>
+      <p class="miss-code">404<span class="cursor" aria-hidden="true"></span></p>
       <h1>Esta página no existe</h1>
-      <p>El enlace puede estar desactualizado. Puedes volver al inicio o escribirnos MAPEO por WhatsApp.</p>
+      <p style="margin-top:12px">El enlace puede estar desactualizado. Puedes volver al inicio o escribirnos MAPEO por WhatsApp.</p>
       <div class="sub-actions">
         <a class="btn btn-primary" href="index.html">Volver al inicio</a>
-        <a class="btn btn-ghost" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer">Escríbenos MAPEO por WhatsApp</a>
+        <a class="btn btn-line" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer">Escríbenos MAPEO por WhatsApp</a>
       </div>
     </article>
   </div>
@@ -58,9 +66,10 @@
     </div>
   </div>
 </footer>
+
 <nav class="dock" aria-label="Contacto rápido">
-  <a class="btn btn-ghost" href="tel:+50769420397">Llamar</a>
-  <a class="btn btn-primary" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  <a class="btn btn-line" href="tel:+50769420397">Llamar</a>
+  <a class="btn btn-primary" href="https://wa.me/50769420397?text=MAPEO">WhatsApp</a>
 </nav>
 <script src="assets/js/main.js"></script>
 </body>
