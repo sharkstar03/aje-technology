@@ -2,11 +2,22 @@
 <html lang="es-PA">
 <head>
 <meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E3L58HJFB0"></script>
+<!-- Google tag (gtag.js) con modo de consentimiento avanzado: todo empieza denegado hasta que la persona acepte -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied'
+  });
+  try {
+    if (localStorage.getItem('aje-consent') === 'granted') gtag('consent', 'update', {'analytics_storage': 'granted'});
+  } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E3L58HJFB0"></script>
+<script>
   gtag('js', new Date());
 
   gtag('config', 'G-E3L58HJFB0');

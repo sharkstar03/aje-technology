@@ -343,6 +343,46 @@
     });
   }
 
+  // Aviso de cookies: Analytics arranca denegado en el <head>; aquí se guarda y se aplica la elección.
+  var CONSENT_KEY = "aje-consent";
+
+  function readConsent() {
+    try { return window.localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
+  }
+
+  function saveConsent(value) {
+    try { window.localStorage.setItem(CONSENT_KEY, value); } catch (e) { /* sin almacenamiento: vale solo para esta página */ }
+    if (typeof window.gtag === "function") window.gtag("consent", "update", { analytics_storage: value });
+  }
+
+  function showConsent() {
+    if (document.querySelector(".consent")) return;
+    var box = document.createElement("section");
+    box.className = "consent";
+    box.setAttribute("aria-label", "Aviso de cookies");
+    box.innerHTML = '<p><b>Cookies de medición.</b> Usamos Google Analytics para saber cuántas personas visitan el sitio. No vendemos tus datos.</p>' +
+      '<div class="consent-actions"><button class="btn btn-line" type="button" data-consent="denied">Rechazar</button>' +
+      '<button class="btn btn-primary" type="button" data-consent="granted">Aceptar</button></div>';
+    box.addEventListener("click", function (event) {
+      var value = event.target.getAttribute("data-consent");
+      if (!value) return;
+      saveConsent(value);
+      box.parentNode.removeChild(box);
+    });
+    document.body.appendChild(box);
+  }
+
+  if (!readConsent()) showConsent();
+  var legal = document.querySelector(".legal");
+  if (legal) {
+    var prefs = document.createElement("button");
+    prefs.type = "button";
+    prefs.className = "cookie-link";
+    prefs.textContent = "Preferencias de cookies";
+    prefs.addEventListener("click", showConsent);
+    legal.appendChild(prefs);
+  }
+
   var form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", function () {

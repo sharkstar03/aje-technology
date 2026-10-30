@@ -363,6 +363,16 @@ footer .social a{background:transparent;color:#fff;border-color:rgba(255,255,255
 .dock .btn{width:100%}
 .wa-float{display:none}
 
+/* Aviso de cookies */
+.consent{position:fixed;left:12px;right:12px;bottom:calc(var(--dock) + 10px);z-index:60;display:grid;gap:12px;padding:16px;border-radius:20px;background:var(--night);color:#c3cee0;border:1px solid rgba(255,255,255,.14);box-shadow:0 24px 60px -20px rgba(0,0,0,.65)}
+.consent p{font-size:.95rem;line-height:1.45}
+.consent b{color:#fff;font-family:var(--fh)}
+.consent-actions{display:flex;gap:8px}
+.consent-actions .btn{flex:1;min-height:44px}
+html.motion .consent{animation:rise .6s var(--ease) both}
+.cookie-link{padding:0;border:0;background:none;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:.18em;cursor:pointer;justify-self:start}
+.cookie-link:hover{color:#fff}
+
 /* Páginas internas (gracias y 404) */
 .subpage,.miss{padding:36px 0 48px}
 .sub-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 16px 30px -24px rgba(11,31,58,.5)}
@@ -429,6 +439,8 @@ footer .social a{background:transparent;color:#fff;border-color:rgba(255,255,255
   .wa-float svg{width:22px;height:22px;fill:#fff}
   .wa-float:hover{transform:translateY(-3px) scale(1.04)}
   .wa-float.is-hidden{opacity:0;pointer-events:none;transform:translateY(20px)}
+  .consent{left:0;right:0;bottom:18px;margin-inline:auto;width:min(780px,calc(100% - 260px));grid-template-columns:1fr auto;align-items:center;gap:18px;padding:14px 16px 14px 20px}
+  .consent-actions .btn{flex:none;padding-inline:1.1rem}
   section{padding:110px 0}
   .section-head{margin-bottom:40px}
   .pin{padding:110px 0}
