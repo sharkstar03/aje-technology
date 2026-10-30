@@ -8,21 +8,21 @@
 <meta name="author" content="AJE Technology, S.A.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0B1F3A">
-<link rel="canonical" href="https://sharkstar03.github.io/aje-technology/">
+<link rel="canonical" href="https://ajetechnologypa.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_PA">
 <meta property="og:site_name" content="AJE Technology">
 <meta property="og:title" content="AJE: Automatiza, Junta y Escala | AJE Technology">
 <meta property="og:description" content="Menos papel, menos errores y tu operación en el celular. Mapeo de procesos gratis con un equipo panameño de TI.">
-<meta property="og:url" content="https://sharkstar03.github.io/aje-technology/">
-<meta property="og:image" content="https://sharkstar03.github.io/aje-technology/assets/img/og.png">
+<meta property="og:url" content="https://ajetechnologypa.com/">
+<meta property="og:image" content="https://ajetechnologypa.com/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="AJE Technology. AJE: Automatiza, Junta y Escala.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AJE: Automatiza, Junta y Escala | AJE Technology">
 <meta name="twitter:description" content="Menos papel, menos errores y tu operación en el celular. Mapeo de procesos gratis con un equipo panameño de TI.">
-<meta name="twitter:image" content="https://sharkstar03.github.io/aje-technology/assets/img/og.png">
+<meta name="twitter:image" content="https://ajetechnologypa.com/assets/img/og.png">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -38,6 +38,7 @@
   var save = navigator.connection && navigator.connection.saveData;
   var cores = navigator.hardwareConcurrency || 8;
   var memory = navigator.deviceMemory || 8;
+  if (!reduce && !save && !(cores <= 4 && memory <= 4)) root.classList.add("fx");
   if (!reduce && wide && !save && !(cores <= 4 && memory <= 4)) root.classList.add("scene-on");
 })();
 </script>
@@ -50,8 +51,8 @@
       "@type": "ProfessionalService",
       "name": "AJE Technology, S.A.",
       "slogan": "AJE: Automatiza, Junta y Escala",
-      "url": "https://sharkstar03.github.io/aje-technology/",
-      "image": "https://sharkstar03.github.io/aje-technology/assets/img/og.png",
+      "url": "https://ajetechnologypa.com/",
+      "image": "https://ajetechnologypa.com/assets/img/og.png",
       "email": "ajetechnologypa@gmail.com",
       "telephone": "+50769420397",
       "address": {"@type": "PostalAddress", "addressLocality": "Ciudad de Panamá", "addressCountry": "PA"},
@@ -87,9 +88,9 @@
   <symbol id="i-linktree" viewBox="0 0 24 24"><path d="m13.73635 5.85251 4.00467-4.11665 2.3248 2.3808-4.20064 4.00466h5.9085v3.30473h-5.9365l4.22865 4.10766-2.3248 2.3338L12.0005 12.099l-5.74052 5.76852-2.3248-2.3248 4.22864-4.10766h-5.9375V8.12132h5.9085L3.93417 4.11666l2.3248-2.3808 4.00468 4.11665V0h3.4727zm-3.4727 10.30614h3.4727V24h-3.4727z"/></symbol>
   <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
 </svg>
-<header>
+<header class="on-dark">
   <nav class="wrap nav" aria-label="Principal">
-    <a class="brand" href="#inicio"><img src="logo.svg" alt="AJE Technology" width="210" height="97"></a>
+    <a class="brand" href="#inicio"><img class="logo-on-dark" src="logo-dark.svg" alt="AJE Technology" width="210" height="97"><img class="logo-on-light" src="logo.svg" alt="" width="210" height="97"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
     <ul id="menu" class="nav-links">
       <li><a href="#asi-trabajamos">Así trabajamos</a></li>
@@ -100,24 +101,22 @@
       <li><a class="btn btn-primary" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer">Escríbenos MAPEO</a></li>
     </ul>
   </nav>
+  <span class="progress" aria-hidden="true"></span>
 </header>
 
 <main id="inicio">
   <section class="hero" id="contenido" aria-labelledby="hero-title">
-    <span class="shape shape-a" aria-hidden="true"></span>
-    <span class="shape shape-b" aria-hidden="true"></span>
+    <canvas class="net" aria-hidden="true"></canvas>
+    <span class="orb orb-a" aria-hidden="true"></span>
+    <span class="orb orb-b" aria-hidden="true"></span>
     <div class="wrap hero-grid">
-      <div>
-        <p class="tagline"><b>AJE:</b> Automatiza, Junta y Escala</p>
+      <div class="hero-copy">
+        <p class="kicker"><span class="pulse" aria-hidden="true"></span>Mapeo de procesos gratis · Panamá</p>
+        <p class="kinetic"><span class="sr-only">AJE: Automatiza, Junta y Escala</span><span class="kw" aria-hidden="true"><span>Automatiza.</span></span><span class="kw kw-outline" aria-hidden="true"><span>Junta.</span></span><span class="kw kw-glow" aria-hidden="true"><span>Escala.</span></span></p>
         <h1 id="hero-title">¿Tu negocio vive en 5 chats de WhatsApp y <em>un Excel que solo entiende una persona?</em><span class="cursor" aria-hidden="true"></span></h1>
         <p class="lead">Primero escuchamos y mapeamos cómo trabajas, gratis. Después lo convertimos en un sistema hecho a tu medida, con web, app, automatización y seguridad en un solo lugar. Y nos quedamos contigo cuando crezcas.</p>
-        <ul class="props">
-          <li><i></i> Ahorra tiempo</li>
-          <li><i></i> Menos errores</li>
-          <li><i></i> Todo en tu celular</li>
-        </ul>
         <div class="cta">
-          <a class="btn btn-primary" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>Quiero mi mapeo gratis</a>
+          <a class="btn btn-primary magnetic" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>Quiero mi mapeo gratis</a>
           <a class="btn btn-ghost" href="#contacto">Prefiero el formulario</a>
         </div>
       </div>
@@ -143,13 +142,21 @@
         <p class="badge">Mapeo gratis</p>
       </div>
     </div>
+    <a class="scroll-cue" href="#beneficios" aria-label="Bajar a los beneficios"><span></span></a>
   </section>
 
-  <section aria-label="Beneficios">
+  <div class="ribbon-wrap" aria-hidden="true"><div class="ribbon">
+    <div class="ribbon-track">
+      <span>Automatización</span><span>Software a la medida</span><span>WhatsApp</span><span>Ciberseguridad</span><span>Redes</span><span>IoT</span><span>Nube</span><span>Soporte técnico</span>
+      <span>Automatización</span><span>Software a la medida</span><span>WhatsApp</span><span>Ciberseguridad</span><span>Redes</span><span>IoT</span><span>Nube</span><span>Soporte técnico</span>
+    </div>
+  </div></div>
+
+  <section id="beneficios" aria-label="Beneficios">
     <div class="wrap benefits">
-      <article class="benefit reveal"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v5l3 2"/></svg></span><div><strong>Ahorra tiempo</strong><p>Menos pasar datos a mano y menos perseguir mensajes.</p></div></article>
-      <article class="benefit reveal"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7 10 17l-6-6"/></svg></span><div><strong>Menos errores</strong><p>Un solo registro. Se acabó copiar el mismo pedido tres veces.</p></div></article>
-      <article class="benefit reveal"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="20" rx="2"/><path d="M11 18h2"/></svg></span><div><strong>Todo en tu celular</strong><p>El estado del día y los avisos, donde estés.</p></div></article>
+      <article class="benefit reveal tilt"><span class="b-num" aria-hidden="true">01</span><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" pathLength="1"/><path d="M12 8v5l3 2" pathLength="1"/></svg></span><div><strong>Ahorra tiempo</strong><p>Menos pasar datos a mano y menos perseguir mensajes.</p></div></article>
+      <article class="benefit reveal tilt"><span class="b-num" aria-hidden="true">02</span><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7 10 17l-6-6" pathLength="1"/></svg></span><div><strong>Menos errores</strong><p>Un solo registro. Se acabó copiar el mismo pedido tres veces.</p></div></article>
+      <article class="benefit reveal tilt"><span class="b-num" aria-hidden="true">03</span><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="20" rx="2" pathLength="1"/><path d="M11 18h2" pathLength="1"/></svg></span><div><strong>Todo en tu celular</strong><p>El estado del día y los avisos, donde estés.</p></div></article>
     </div>
   </section>
 
@@ -160,115 +167,130 @@
         <h2 id="cambio-title">Del papel y el Excel a un sistema</h2>
         <p>El dolor es conocido: se anota, se vuelve a escribir, y solo una persona entiende el archivo.</p>
       </div>
+      <div class="compare reveal" style="--pos:50%">
+        <img class="cmp-after" src="assets/img/despues.webp" width="960" height="720" alt="Local atendiendo un pedido desde una tablet" loading="lazy" decoding="async">
+        <div class="cmp-before"><img src="assets/img/antes.webp" width="960" height="720" alt="Escritorio con cuaderno, papeles y una laptop" loading="lazy" decoding="async"></div>
+        <span class="cmp-tag cmp-tag-before" aria-hidden="true">Hoy, a mano</span>
+        <span class="cmp-tag cmp-tag-after" aria-hidden="true">Con AJE</span>
+        <span class="cmp-handle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+        <input class="cmp-range" type="range" min="0" max="100" value="50" aria-label="Desliza para comparar el trabajo a mano con el trabajo con AJE">
+      </div>
       <div class="ba">
         <article class="panel reveal">
-          <img src="assets/img/antes.webp" width="960" height="720" alt="Escritorio con cuaderno, papeles y una laptop" loading="lazy" decoding="async">
-          <div class="body">
-            <h3>Hoy, a mano</h3>
-            <p>Papel, Excel y chats sueltos.</p>
-            <div class="chip-row"><span>Cuaderno</span><span>Excel</span><span>WhatsApp</span></div>
-          </div>
+          <h3>Hoy, a mano</h3>
+          <p>Papel, Excel y chats sueltos.</p>
+          <div class="chip-row"><span>Cuaderno</span><span>Excel</span><span>WhatsApp</span></div>
         </article>
         <article class="panel good reveal">
-          <img src="assets/img/despues.webp" width="960" height="720" alt="Local atendiendo un pedido desde una tablet" loading="lazy" decoding="async">
-          <div class="body">
-            <h3>Con AJE</h3>
-            <p>El mismo proceso, en un sistema que el equipo usa.</p>
-            <div class="flow-ui" aria-hidden="true"><b>Pedido registrado</b><b>Inventario al día</b><b>Aviso enviado</b></div>
-          </div>
+          <h3>Con AJE</h3>
+          <p>El mismo proceso, en un sistema que el equipo usa.</p>
+          <div class="flow-ui" aria-hidden="true"><b>Pedido registrado</b><b>Inventario al día</b><b>Aviso enviado</b></div>
         </article>
       </div>
-      <div class="cta" style="margin-top:16px">
+      <div class="cta">
         <a class="btn btn-primary" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer">Quiero ese cambio: MAPEO</a>
       </div>
     </div>
   </section>
 
-  <section id="asi-trabajamos" aria-labelledby="asi-title">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Nuestro método</p>
-        <h2 id="asi-title">Así trabajamos</h2>
+  <section id="asi-trabajamos" class="dark pin" aria-labelledby="asi-title">
+    <div class="pin-sticky">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Nuestro método</p>
+          <h2 id="asi-title">Así trabajamos</h2>
+        </div>
       </div>
-      <div class="why">
-        <article class="reveal"><h3>1. Primero te escuchamos.</h3><p>Mapeamos tus procesos gratis antes de venderte nada. Si no hace falta un sistema, te lo decimos.</p></article>
-        <article class="reveal"><h3>2. Hecho a tu medida.</h3><p>Tu negocio no se adapta al software: el software se adapta a tu negocio.</p></article>
-        <article class="reveal"><h3>3. Todo en un solo lugar.</h3><p>Sistema, automatización de WhatsApp, web, tienda, app y ciberseguridad con un mismo equipo. Un solo número que llamar, no cinco proveedores.</p></article>
-        <article class="reveal"><h3>4. En panameño, sin enredos.</h3><p>Nuestro equipo es local y te explica todo en sencillo. Cero jerga.</p></article>
-        <article class="reveal"><h3>5. Seguimos después de entregar.</h3><p>Te damos soporte y el sistema crece contigo. Automatiza, Junta y Escala.</p></article>
+      <div class="pin-track">
+        <article class="step"><span class="step-num">01</span><h3>Primero te escuchamos.</h3><p>Mapeamos tus procesos gratis antes de venderte nada. Si no hace falta un sistema, te lo decimos.</p></article>
+        <article class="step"><span class="step-num">02</span><h3>Hecho a tu medida.</h3><p>Tu negocio no se adapta al software: el software se adapta a tu negocio.</p></article>
+        <article class="step"><span class="step-num">03</span><h3>Todo en un solo lugar.</h3><p>Sistema, automatización de WhatsApp, web, tienda, app y ciberseguridad con un mismo equipo. Un solo número que llamar, no cinco proveedores.</p></article>
+        <article class="step"><span class="step-num">04</span><h3>En panameño, sin enredos.</h3><p>Nuestro equipo es local y te explica todo en sencillo. Cero jerga.</p></article>
+        <article class="step"><span class="step-num">05</span><h3>Seguimos después de entregar.</h3><p>Te damos soporte y el sistema crece contigo. Automatiza, Junta y Escala.</p></article>
       </div>
+      <div class="wrap"><div class="pin-bar" aria-hidden="true"><span></span></div></div>
     </div>
   </section>
 
-  <section id="servicios" class="alt" aria-labelledby="serv-title">
+  <section id="servicios" aria-labelledby="serv-title">
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">Servicios</p>
         <h2 id="serv-title">Lo que hace falta, en un solo equipo</h2>
       </div>
       <div class="services">
-        <article class="card reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/><path d="m14 15 3 3 5-6"/></svg></div><div><h3>Transformación</h3><p>Del proceso manual al sistema, con orden.</p></div></article>
-        <article class="card reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div><div><h3>Software a la medida</h3><p>Sitios, sistemas e integraciones. Nada de plantilla genérica.</p></div></article>
-        <article class="card reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 4v4h-4M20 12a8 8 0 0 1-13.7 5.6L4 16M4 20v-4h4"/></svg></div><div><h3>Automatización</h3><p>Avisos, reportes y tareas que ya no se hacen a mano.</p></div></article>
-        <article class="card reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><div><h3>Soporte técnico</h3><p>En la Ciudad de Panamá y remoto en todo el país.</p></div></article>
-        <article class="card reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></div><div><h3>Ciberseguridad</h3><p>Va dentro del proyecto, no como un extra al final.</p></div></article>
-        <article class="card reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></svg></div><div><h3>Redes</h3><p>Wi-Fi, cableado, firewall y cámaras.</p></div></article>
-        <article class="card reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div><div><h3>IoT</h3><p>Sensores que avisan cuando algo se sale de lo normal.</p></div></article>
-        <article class="card reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.4-8 6 6 0 0 1 11.6-1.6A4.5 4.5 0 1 1 18 18Z"/></svg></div><div><h3>Nube</h3><p>Correo, archivos y licencias en orden.</p></div></article>
+        <article class="card reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/><path d="m14 15 3 3 5-6"/></svg></div><div><h3>Transformación</h3><p>Del proceso manual al sistema, con orden.</p></div></article>
+        <article class="card reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div><div><h3>Software a la medida</h3><p>Sitios, sistemas e integraciones. Nada de plantilla genérica.</p></div></article>
+        <article class="card reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 4v4h-4M20 12a8 8 0 0 1-13.7 5.6L4 16M4 20v-4h4"/></svg></div><div><h3>Automatización</h3><p>Avisos, reportes y tareas que ya no se hacen a mano.</p></div></article>
+        <article class="card reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><div><h3>Soporte técnico</h3><p>En la Ciudad de Panamá y remoto en todo el país.</p></div></article>
+        <article class="card reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></div><div><h3>Ciberseguridad</h3><p>Va dentro del proyecto, no como un extra al final.</p></div></article>
+        <article class="card reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></svg></div><div><h3>Redes</h3><p>Wi-Fi, cableado, firewall y cámaras.</p></div></article>
+        <article class="card reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div><div><h3>IoT</h3><p>Sensores que avisan cuando algo se sale de lo normal.</p></div></article>
+        <article class="card reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.4-8 6 6 0 0 1 11.6-1.6A4.5 4.5 0 1 1 18 18Z"/></svg></div><div><h3>Nube</h3><p>Correo, archivos y licencias en orden.</p></div></article>
       </div>
     </div>
   </section>
 
-  <section aria-labelledby="sec-title">
+  <section class="who alt" aria-labelledby="sec-title">
     <div class="wrap">
       <div class="section-head reveal"><p class="eyebrow">Para quién</p><h2 id="sec-title">Cualquier tamaño. El proceso manda.</h2></div>
-      <ul class="tags reveal">
-        <li>Comercio</li><li>Servicios</li><li>Clínicas</li><li>Educación</li><li>Restaurantes</li><li>Logística</li><li>Construcción</li><li>Industria</li><li>Emprendimientos</li>
-      </ul>
+    </div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <ul class="tags"><li>Comercio</li><li>Servicios</li><li>Clínicas</li><li>Educación</li><li>Restaurantes</li><li>Logística</li><li>Construcción</li><li>Industria</li><li>Emprendimientos</li></ul>
+        <ul class="tags" aria-hidden="true"><li>Comercio</li><li>Servicios</li><li>Clínicas</li><li>Educación</li><li>Restaurantes</li><li>Logística</li><li>Construcción</li><li>Industria</li><li>Emprendimientos</li></ul>
+      </div>
+    </div>
+    <div class="marquee marquee-rev" aria-hidden="true">
+      <div class="marquee-track">
+        <ul class="tags"><li>Logística</li><li>Clínicas</li><li>Emprendimientos</li><li>Restaurantes</li><li>Industria</li><li>Comercio</li><li>Construcción</li><li>Educación</li><li>Servicios</li></ul>
+        <ul class="tags"><li>Logística</li><li>Clínicas</li><li>Emprendimientos</li><li>Restaurantes</li><li>Industria</li><li>Comercio</li><li>Construcción</li><li>Educación</li><li>Servicios</li></ul>
+      </div>
     </div>
   </section>
 
-  <section id="proceso" class="alt" aria-labelledby="pro-title">
+  <section id="proceso" class="dark" aria-labelledby="pro-title">
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">Cómo trabajamos</p>
         <h2 id="pro-title">Cuatro pasos. El primero no se cobra.</h2>
       </div>
       <ol class="timeline">
-        <li class="reveal"><span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span><div><h3>1. Mapeo de procesos</h3><p>Gratis. Vemos el papel, el Excel y dónde se traba el día.</p></div></li>
-        <li class="reveal"><span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19V5h10l4 4v10Z"/><path d="M9 13h6M9 17h4"/></svg></span><div><h3>2. Hoja de ruta</h3><p>Alcance, tiempo y precio por escrito. Tú decides.</p></div></li>
-        <li class="reveal"><span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4"/></svg></span><div><h3>3. Implementación</h3><p>Sistema, integración o automatización, con la menor pausa posible.</p></div></li>
-        <li class="reveal"><span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.6-7 10-7 10Z"/></svg></span><div><h3>4. Acompañamiento</h3><p>Capacitación, ajustes y soporte. No desaparecemos al instalar.</p></div></li>
+        <li class="reveal"><span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" pathLength="1"/></svg></span><div><h3>1. Mapeo de procesos</h3><p>Gratis. Vemos el papel, el Excel y dónde se traba el día.</p></div></li>
+        <li class="reveal"><span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19V5h10l4 4v10Z" pathLength="1"/><path d="M9 13h6M9 17h4" pathLength="1"/></svg></span><div><h3>2. Hoja de ruta</h3><p>Alcance, tiempo y precio por escrito. Tú decides.</p></div></li>
+        <li class="reveal"><span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4" pathLength="1"/></svg></span><div><h3>3. Implementación</h3><p>Sistema, integración o automatización, con la menor pausa posible.</p></div></li>
+        <li class="reveal"><span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.6-7 10-7 10Z" pathLength="1"/></svg></span><div><h3>4. Acompañamiento</h3><p>Capacitación, ajustes y soporte. No desaparecemos al instalar.</p></div></li>
       </ol>
     </div>
   </section>
 
   <section id="seguridad" aria-labelledby="seg-title">
-    <div class="wrap">
+    <div class="wrap seg-grid">
       <div class="section-head reveal">
         <p class="eyebrow">Ciberseguridad</p>
         <h2 id="seg-title">Va en el proyecto, no al final</h2>
         <p>Hábitos simples mientras tanto. No reemplazan una revisión.</p>
+        <div class="radar" aria-hidden="true"><i></i><i></i><i></i><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></div>
       </div>
       <div class="tips">
-        <article class="tip reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>Doble paso</h3><p>En correo, banca y cuentas de la organización.</p></article>
-        <article class="tip reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="15" r="3"/><path d="m10 13 8-8"/></svg></div><h3>Claves distintas</h3><p>Un gestor. No la misma clave en todo.</p></article>
-        <article class="tip reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></div><h3>Mensajes urgentes</h3><p>Confirma por otro canal antes de abrir o pagar.</p></article>
-        <article class="tip reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h12v8H4zM8 15v3h12V10"/></svg></div><h3>Respaldos</h3><p>Más de una copia. Y prueba que sí restaura.</p></article>
-        <article class="tip reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2-5"/><path d="M20 4v4h-4"/></svg></div><h3>Actualiza</h3><p>Equipos, teléfonos y el router.</p></article>
-        <article class="tip reveal"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 19a6 6 0 0 1 12 0"/></svg></div><h3>Accesos</h3><p>Cada quien su usuario. El Wi-Fi de visitas, aparte.</p></article>
+        <article class="tip reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>Doble paso</h3><p>En correo, banca y cuentas de la organización.</p></article>
+        <article class="tip reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="15" r="3"/><path d="m10 13 8-8"/></svg></div><h3>Claves distintas</h3><p>Un gestor. No la misma clave en todo.</p></article>
+        <article class="tip reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></div><h3>Mensajes urgentes</h3><p>Confirma por otro canal antes de abrir o pagar.</p></article>
+        <article class="tip reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h12v8H4zM8 15v3h12V10"/></svg></div><h3>Respaldos</h3><p>Más de una copia. Y prueba que sí restaura.</p></article>
+        <article class="tip reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2-5"/><path d="M20 4v4h-4"/></svg></div><h3>Actualiza</h3><p>Equipos, teléfonos y el router.</p></article>
+        <article class="tip reveal tilt"><div class="art" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 19a6 6 0 0 1 12 0"/></svg></div><h3>Accesos</h3><p>Cada quien su usuario. El Wi-Fi de visitas, aparte.</p></article>
       </div>
     </div>
   </section>
 
   <section id="nosotros" class="alt" aria-labelledby="mision">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <p class="eyebrow">Nosotros</p>
         <h2 id="mision">Misión y visión</h2>
       </div>
       <div class="mv">
-        <article class="mv-card mv-mission reveal">
+        <article class="mv-card mv-mission reveal tilt">
           <div class="mv-ico" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 7h7v4H4zM13 13h7v4h-7z"/><path d="M7.5 11v2.5H13M16.5 13V10.5H11"/></svg>
           </div>
@@ -277,7 +299,7 @@
             <p>Transformar la forma en que trabajan los negocios en Panamá, convirtiendo procesos manuales en sistemas digitales simples, seguros y a la medida, para que cada organización ahorre tiempo, reduzca errores y crezca con confianza.</p>
           </div>
         </article>
-        <article class="mv-card mv-vision reveal">
+        <article class="mv-card mv-vision reveal tilt">
           <div class="mv-ico" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M3 16c2.5-3 5-4.5 9-4.5S18.5 13 21 16"/><path d="M12 11.5V6"/><circle cx="12" cy="5" r="1.4"/><path d="M4 19h16"/></svg>
           </div>
@@ -317,9 +339,9 @@
 
   <section class="band-wrap" aria-labelledby="band-title">
     <div class="wrap">
-      <div class="band">
+      <div class="band reveal">
         <div><h2 id="band-title">El siguiente paso es un mapeo, y es gratis.</h2><p>Escribe MAPEO. Vemos tu proceso antes de hablar de un sistema.</p></div>
-        <a class="btn btn-primary" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>Escríbenos MAPEO por WhatsApp</a>
+        <a class="btn btn-primary magnetic" href="https://wa.me/50769420397?text=MAPEO" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>Escríbenos MAPEO por WhatsApp</a>
       </div>
     </div>
   </section>
@@ -343,11 +365,11 @@
           <a href="https://linktr.ee/ajetechnologypa" target="_blank" rel="noopener noreferrer" aria-label="Linktree"><svg aria-hidden="true"><use href="#i-linktree"></use></svg></a>
         </div>
       </div>
-      <form id="contact-form" action="https://formsubmit.co/ajetechnologypa@gmail.com" method="POST" accept-charset="UTF-8">
+      <form id="contact-form" class="reveal" action="https://formsubmit.co/ajetechnologypa@gmail.com" method="POST" accept-charset="UTF-8">
         <input type="hidden" name="_subject" value="Nueva solicitud desde el sitio de AJE Technology">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://sharkstar03.github.io/aje-technology/gracias.html">
+        <input type="hidden" name="_next" value="https://ajetechnologypa.com/gracias">
         <input type="hidden" name="_autoresponse" value="Recibimos tu mensaje. El equipo de AJE Technology te contactará pronto. Si quieres adelantar, escribe MAPEO por WhatsApp al +507 6942-0397.">
         <div class="hp" aria-hidden="true"><label>No llenar<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
         <div class="two">
@@ -416,6 +438,7 @@
         </div>
       </div>
     </div>
+    <p class="foot-giant" aria-hidden="true">Automatiza, Junta y Escala</p>
     <div class="legal">
       <span>© <span id="y">2026</span> AJE Technology, S.A.</span>
       <span>Ciudad de Panamá</span>

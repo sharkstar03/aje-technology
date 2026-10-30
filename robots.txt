@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sharkstar03.github.io/aje-technology/sitemap.xml
+Sitemap: https://ajetechnologypa.com/sitemap.xml
